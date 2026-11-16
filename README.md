@@ -39,7 +39,7 @@ Use the **Subjects & Marks** page to add subjects and enter or update a student'
 
 For an existing database, run `data/upgrade-student-portal.sql` once before deployment. New databases get the same tables and columns from `data/init.sql`. Existing student accounts have no password hash; an admin must edit each account and set a temporary password before that student can sign in.
 
-Admins set a temporary password when adding a student. Students sign in from the second option on the landing page and must change the temporary password on first login. Passwords are stored as PBKDF2 hashes. Students can view only their own subject report, submit subject-specific mark discrepancy complaints, follow admin responses, save a parent phone number in international E.164 format, and view the leaderboard. Admins can review and respond to complaints.
+Admins set a temporary password when adding student. Students sign in from the second option on the landing page and must change the temporary password on first login. Passwords are stored as PBKDF2 hashes. Students can view only their own subject report, submit subject-specific mark discrepancy complaints, follow admin responses, save a parent phone number in international E.164 format, and view the leaderboard. Admins can review and respond to complaints.
 
 For an existing database, run `data/upgrade-scheduled-parent-calls.sql` to add scheduled-call storage. New databases get this table from `data/init.sql`.
 
